@@ -11,6 +11,8 @@
 		FCE3699923E4BD7B00661990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3699823E4BD7B00661990 /* ViewController.swift */; };
 		FCE3699B23E4BD7D00661990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE3699A23E4BD7D00661990 /* Assets.xcassets */; };
 		FCE3699E23E4BD7D00661990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE3699C23E4BD7D00661990 /* Main.storyboard */; };
+		FCE369A923E86E1900661990 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE369A823E86E1900661990 /* WindowController.swift */; };
+		FCE369AB23EC943E00661990 /* CGSize+aspectFit+aspectFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE369AA23EC943E00661990 /* CGSize+aspectFit+aspectFill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		FCE3699D23E4BD7D00661990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCE3699F23E4BD7D00661990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCE369A023E4BD7D00661990 /* ExploringRectangleDetection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExploringRectangleDetection.entitlements; sourceTree = "<group>"; };
+		FCE369A823E86E1900661990 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		FCE369AA23EC943E00661990 /* CGSize+aspectFit+aspectFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+aspectFit+aspectFill.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				FCE3699C23E4BD7D00661990 /* Main.storyboard */,
 				FCE3699F23E4BD7D00661990 /* Info.plist */,
 				FCE369A023E4BD7D00661990 /* ExploringRectangleDetection.entitlements */,
+				FCE369A823E86E1900661990 /* WindowController.swift */,
+				FCE369AA23EC943E00661990 /* CGSize+aspectFit+aspectFill.swift */,
 			);
 			path = ExploringRectangleDetection;
 			sourceTree = "<group>";
@@ -134,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE3699923E4BD7B00661990 /* ViewController.swift in Sources */,
+				FCE369A923E86E1900661990 /* WindowController.swift in Sources */,
 				FCE3699723E4BD7B00661990 /* AppDelegate.swift in Sources */,
+				FCE369AB23EC943E00661990 /* CGSize+aspectFit+aspectFill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
