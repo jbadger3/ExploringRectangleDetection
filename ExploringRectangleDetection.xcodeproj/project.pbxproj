@@ -25,6 +25,7 @@
 		FCE369A023E4BD7D00661990 /* ExploringRectangleDetection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExploringRectangleDetection.entitlements; sourceTree = "<group>"; };
 		FCE369A823E86E1900661990 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		FCE369AA23EC943E00661990 /* CGSize+aspectFit+aspectFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+aspectFit+aspectFill.swift"; sourceTree = "<group>"; };
+		FCE369AC23EDB9D000661990 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		FCE3698A23E4BD7B00661990 = {
 			isa = PBXGroup;
 			children = (
+				FCE369AC23EDB9D000661990 /* README.md */,
 				FCE3699523E4BD7B00661990 /* ExploringRectangleDetection */,
 				FCE3699423E4BD7B00661990 /* Products */,
 			);

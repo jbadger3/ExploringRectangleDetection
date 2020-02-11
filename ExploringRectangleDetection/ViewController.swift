@@ -271,6 +271,7 @@ class ViewController: NSViewController {
         shapeLayer.frame = frame
         shapeLayer.path = pathForRectangle(rectangle, withTransformProperties: transformProperties, andBoundingBox: shapeLayer.bounds)
         shapeLayer.strokeColor = CGColor(red: 1.0, green: 0, blue: 0, alpha: 1.0)
+        shapeLayer.lineWidth = 2.0
         shapeLayer.fillColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.0)
         shapeLayer.name = "rectangle"
         return shapeLayer
