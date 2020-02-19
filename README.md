@@ -1,4 +1,5 @@
 #  ExploringRectangleDetection
 
-![Windows](windows_w_rects.jpg)
+![Windows](screenshot.jpg)
 
+## 

@@ -23,7 +23,8 @@ class ViewController: NSViewController {
     var minimumConfidence: Float = 0.0
 
     //MARK: - Interface Builder Outlets
-    @IBOutlet var inputImageView: NSImageView!
+    
+    @IBOutlet weak var inputImageView: NSImageView!
     @IBOutlet var showRectanglesSwitch: NSSwitch!
     @IBOutlet weak var maximumObservationsTextField: NSTextField!
     @IBOutlet weak var minimumAspectRatioLabel: NSTextField!
@@ -41,7 +42,10 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         inputImageView.wantsLayer = true
-        inputImageView.layer?.backgroundColor = CGColor.white
+        if let layer = inputImageView.layer {
+            layer.backgroundColor = CGColor.white
+            layer.contentsGravity = .resizeAspect
+        }
     }
 
     //MARK: - User actions
@@ -158,8 +162,10 @@ class ViewController: NSViewController {
     func setInputImage() {
         if let inputImageURL = inputImageURL {
             if let image = NSImage(contentsOf: inputImageURL) {
-                inputImageView.imageScaling = .scaleProportionallyDown
-                inputImageView.image = image
+                if let layer = inputImageView.layer {
+                    layer.contents = image
+                }
+                //inputImageView.image = image
                 rectangles = nil
                 clearRectangles()
                 createVisionRequest()
@@ -236,7 +242,7 @@ class ViewController: NSViewController {
             guard let self = self else { return }
             self.addRectangleOutlinesToInputImage()
         }
-        print("Found \(rectangles.count) rectangles")
+        //print("Found \(rectangles.count) rectangles")
     }
     
     //MARK: - Rectangle display methods
@@ -265,8 +271,7 @@ class ViewController: NSViewController {
     }
     
     func shapeLayerForObservation(_ rectangle: VNRectangleObservation) -> CAShapeLayer {
-        guard let image = inputImageView.image else { return CAShapeLayer() }
-        
+        guard let image = inputImageView.layer?.contents as? NSImage else { return CAShapeLayer() }
         let transformProperties = CGSize.aspectFit(aspectRatio: image.size, boundingSize: inputImageView.bounds.size)
         let shapeLayer = CAShapeLayer()
         let frame = frameForRectangle(rectangle, withTransformProperties: transformProperties)

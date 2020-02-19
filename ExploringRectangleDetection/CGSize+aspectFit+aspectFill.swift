@@ -16,7 +16,7 @@ extension CGSize {
         var fittedHeight = boundingSize.height
         var xOffset = CGFloat(0.0)
         var yOffset = CGFloat(0.0)
-        
+
         if( mH < mW ) {
             fittedWidth = boundingSize.height / aspectRatio.height * aspectRatio.width;
             xOffset = abs(boundingSize.width - fittedWidth)/2
