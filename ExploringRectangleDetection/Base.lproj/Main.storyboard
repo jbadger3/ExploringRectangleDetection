@@ -719,14 +719,14 @@
                             </textField>
                             <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ph6-y4-9o1">
                                 <rect key="frame" x="474" y="17" width="488" height="557"/>
-                                <imageCell key="cell" selectable="YES" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="button" id="4jP-Ah-hIA"/>
+                                <imageCell key="cell" selectable="YES" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="grayBezel" id="4jP-Ah-hIA"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1aG-OQ-r5c">
                                 <rect key="frame" x="187" y="489" width="43" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="5Cr-Gq-oCM"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="E03-mk-2JB">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="1" drawsBackground="YES" id="E03-mk-2JB">
                                     <numberFormatter key="formatter" formatterBehavior="custom10_4" localizesFormat="NO" numberStyle="spellOut" allowsFloats="NO" usesGroupingSeparator="NO" roundingMode="ceiling" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="0" id="MSb-bB-ddN">
                                         <real key="minimum" value="0.0"/>
                                     </numberFormatter>
