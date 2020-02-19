@@ -40,6 +40,8 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputImageView.wantsLayer = true
+        inputImageView.layer?.backgroundColor = CGColor.white
     }
 
     //MARK: - User actions
